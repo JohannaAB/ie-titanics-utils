@@ -12,3 +12,9 @@ def test_tokenize_returns_expected_tokens(sentence, expected_tokens):
     
     assert tokens == expected_tokens
 
+
+def test_tokenize_lower_returns_lowercase_tokens():
+    sentence = "Hello World!"
+    expected_tokes = ("hello", "world!")
+    tokens = tokenize(sentence, lower= True)
+
