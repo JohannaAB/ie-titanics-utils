@@ -8,9 +8,11 @@ import pandas as pd
 
 
 def tokenize(text, lower = False):
-    if lower:
-        text = text.lower()
-    return text.split()
+    if not text:
+        raise ValueError("Cannot tokenize empty sentence")
+        if lower is True:
+            text = text.lower()
+        return text.split()
 
 def main():
     print(tokenize(sys.argv[1]))
