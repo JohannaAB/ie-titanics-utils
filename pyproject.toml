@@ -9,6 +9,7 @@ author-email = "johanna.andrango.b@student.ie.edu"
 description-file = "README.md"
 requires = [
     "pandas"
+    # "flask", #Instead, use requirements.txt
 ]
 
 [tool.flit.metadata.requires-extra]
