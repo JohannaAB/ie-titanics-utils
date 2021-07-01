@@ -1,1 +1,1 @@
-hweb: flask run --port $PORT --host 0.0.0.0
+hweb: voila UI.ipynb --port $PORT --Voila.ip = 0.0.0.0
